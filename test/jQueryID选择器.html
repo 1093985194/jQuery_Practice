@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // $("#one")//返回一个jQuery对象
+        // $("#one").show()//display:block
+        // $("#one").text("jQuery")
+
+        //DOM实现  $("#one").text("jQuery")
+        // document.getElementById("one").innerText="DOM"
+
+        //jQuery对象与DOM对象的函数无法公用，但jQuery对象可以转换为DOM对象
+        $("#one").get(0).innerText="jQuery"
+    })
+</script>
+<body>
+    <div id="one">Category: Selectors</div>
+</body>
+</html>
