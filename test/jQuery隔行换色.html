@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#mytable tbody tr:odd").css("backgroundColor","aliceblue");
+        $("#mytable tbody tr:even").css("backgroundColor","beige");
+    });
+</script>
+<body>
+    <table border="1" id="mytable">
+        <thead>
+            <tr><th>收费单位</th><th>付款方式</th><th>结算方式</th><th>状态</th></tr>
+        </thead>
+
+        <tbody>
+            <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+            <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+            <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+            <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+            <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr><td>统计</td><td>统计</td><td>统计</td><td>统计</td></tr>
+        </tfoot>
+
+    </table>
+
+    <table border="1">
+        <tr><th>收费单位</th><th>付款方式</th><th>结算方式</th><th>状态</th></tr>
+        <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+        <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+        <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+        <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+        <tr><td>xxxx公司</td><td>手机</td><td>支付宝</td><td>已付款</td></tr>
+    </table>
+</body>
+</html>

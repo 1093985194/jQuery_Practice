@@ -18,8 +18,11 @@
 </style>
 <script>
     setTimeout(function () {
-        $("#ad").show()
-    },3000)
+        // $("#ad").show("slow")
+        $("#ad").show(3000,function () {
+            console.log("动画完成")
+        })
+    },1000)
     setTimeout(function () {
         $("#ad").hide()
     },5000)
